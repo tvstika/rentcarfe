@@ -109,7 +109,7 @@
 }
 .keunggulan .card-body {
   overflow: hidden;
-  height: 8.5rem;
+  height: auto;
 }
 /* Rent Preview Section */
 .kendaraan {
@@ -223,6 +223,9 @@
   text-align: left;
   padding: 0rem 1rem;
 }
+.about .section-title {
+  margin-bottom: 2rem;
+}
 @media (max-width: 768px) {
   .banner-text {
     top: 10%;
@@ -232,6 +235,9 @@
     height: 12rem;
     width: 100%;
     object-fit: cover;
+  }
+  .about .section-title {
+    margin-bottom: 0rem;
   }
 }
 /* Footer Section */
