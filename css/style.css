@@ -125,7 +125,8 @@
   overflow: hidden;
 }
 .card-vehicle img {
-  width: 100%;
+  height: 20rem;
+  width: auto;
   object-fit: cover;
 }
 .card-vehicle .card-title {
@@ -184,12 +185,38 @@ blockquote::after {
 .review-profile-info {
   margin-left: 1rem;
 }
-.multiple-card-slider .card {
-  height: auto;
-  margin: 0 0.5rem;
-  border: none;
-  border: 1px solid var(--grey);
+/* Menampilkan Scrollbar pada text card yang overflow */
+.multiple-card-slider .card-body {
+  width: auto;
+  height: 13rem;
+  overflow-y: auto;
 }
+.multiple-card-slider .card {
+  margin: 0 0.5rem;
+}
+.multiple-card-slider .card-text {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+/* Uncomment jika prefer ... pada text overflow daripada scrollbar
+.multiple-card-slider .card-body {
+  overflow: hidden;
+  width: auto;
+  height: 13rem;
+  text-overflow: ellipsis;
+}
+.multiple-card-slider .card {
+  margin: 0 0.5rem;
+}
+
+.multiple-card-slider .card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+} */
 .multiple-card-slider .carousel {
   margin: 0rem -0.5rem;
   margin-right: -0.5rem;
@@ -203,7 +230,7 @@ blockquote::after {
   top: 50%;
   transform: translateY(-50%);
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .multiple-card-slider .carousel-item {
     margin-right: 0;
     flex: 0 0 calc(100% / 3);
