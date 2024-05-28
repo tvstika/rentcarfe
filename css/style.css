@@ -186,7 +186,7 @@ blockquote::after {
   margin-left: 1rem;
 }
 .rating{
-  margin-top: 1rem;
+  margin-top: -1rem;
 }
 /* Menampilkan Scrollbar pada text card yang overflow */
 .multiple-card-slider .card-body {
