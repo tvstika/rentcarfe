@@ -400,6 +400,9 @@ blockquote::after {
 .review-profile-info {
   margin-left: 1rem;
 }
+.rating{
+  margin-top: -1rem;
+}
 /* Menampilkan Scrollbar pada text card yang overflow */
 .multiple-card-slider .card-body {
   width: auto;
