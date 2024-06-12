@@ -13,157 +13,257 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-
     <!-- Bootstrap Icon -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <!-- Google Font Anton -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- CSS External -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font SF Pro Display -->
+    <link
+      href="https://fonts.cdnfonts.com/css/sf-pro-display"
       rel="stylesheet"
     />
   </head>
   <body>
     <!-- Start Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
-      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Rent</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">About</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-secondary me-4" type="submit">Search</button>
-        </form>
-        <div class="mt-2 mt-lg-0">
-          <button type="button" class="btn btn-secondary">Get started</button>
+      <div class="container-fluid">
+        <img src="images/icon.png" class="me-5" alt="" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sewa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tentang Kami</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success me-5" type="submit">
+              Search
+            </button>
+          </form>
+          <a href="" class="btn btn-outline-primary">Account</a>
         </div>
       </div>
     </nav>
     <!-- End Navbar -->
 
     <!-- Start Hero -->
-    <div class="section hero">
-      <div class="container">
+    <div class="hero-container">
+      <img src="images/banner/hero.jpg" alt="" class="hero-img" />
+    </div>
+    <div class="hero">
+      <div class="hero-text-bg"></div>
+      <div class="hero-text">
         <div class="hero-title">
           <p>SEWA KENDARAAN</p>
         </div>
-        <div class="hero-banner">
-          <img class="img-fluid" src="images/banner/banner-01.jpg" alt="" />
+        <div class="hero-desc">
+          <p>
+            Sewa kendaraan murah kini lebih mudah. <br />
+            Booking online tanpa perlu datang ke kantor! <br />
+            Segera hubungi kami!
+          </p>
         </div>
-        <!-- <div class="running-text">
-          <p class="running-text-scroll">SEWA MOBIL & MOTOR</p>
-          <p class="running-text-scroll">SEWA MOBIL & MOTOR</p>
-          <p class="running-text-scroll">SEWA MOBIL & MOTOR</p>
-        </div> -->
+        <div class="btn-styled">
+          <ul>
+            <li>
+              <p><a href="" class="btn">Kontak Kami</a></p>
+            </li>
+            <li><i class="btn bi bi-arrow-right"></i></li>
+          </ul>
+        </div>
       </div>
     </div>
     <!-- End Hero -->
 
-    <!-- Start Keunggulan -->
-    <div class="section keunggulan">
+    <!-- Start Brands -->
+    <div class="brands section">
       <div class="container">
-        <!-- Start Title Section -->
-        <div class="row">
-          <div class="dot-title">
-            <i class="bi bi-circle-fill"></i>
-            <h5>Keunggulan</h5>
+        <div class="marquee">
+          <div class="marquee-content scroll">
+            <div><img src="images/brand/honda.png" alt="" /></div>
+            <div><img src="images/brand/toyota.png" alt="" /></div>
+            <div><img src="images/brand/tesla.png" alt="" /></div>
+            <div><img src="images/brand/hyundai.png" alt="" /></div>
+            <div><img src="images/brand/bmw.png" alt="" /></div>
           </div>
-          <div class="sub-title col-xl-7 col-lg-9">
-            <h2 class="mb-4 section-title">Mengapa harus memilih kami?</h2>
-          </div>
-          <div class="sub-title-btn col-xl-5 col-lg-3">
-            <p><a href="" class="btn btn-secondary">Explore</a></p>
+          <div class="marquee-content scroll">
+            <div><img src="images/brand/honda.png" alt="" /></div>
+            <div><img src="images/brand/toyota.png" alt="" /></div>
+            <div><img src="images/brand/tesla.png" alt="" /></div>
+            <div><img src="images/brand/hyundai.png" alt="" /></div>
+            <div><img src="images/brand/bmw.png" alt="" /></div>
           </div>
         </div>
-        <!-- End Title Section -->
-        <!-- Start Main Section -->
-        <div class="row">
-          <!-- Start Keunggulan 1 -->
-          <div class="col-12 col-xl-6 col-xxl-3 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Asuransi</h5>
-                <p class="card-text">
-                  Semua unit kendaraan menggunakan asuransi untuk memberikan
-                  perlindungan total.
-                </p>
+      </div>
+    </div>
+    <!-- End Brands -->
+
+    <!-- Start Keunggulan -->
+    <div class="keunggulan section">
+      <div class="row p-3">
+        <!-- First column, full-width on medium and smaller screens, half-width on larger screens -->
+        <div class="col-12 col-lg-4 p-2">
+          <div class="p-3 kcol-left">
+            <div class="title-section">
+              <div class="sub-title">Keunggulan</div>
+              <div class="title-desc">
+                <p>Mengapa memilih kami?</p>
               </div>
             </div>
           </div>
-          <!-- End Keunggulan 1 -->
-          <!-- Start Keunggulan 2 -->
-          <div class="col-12 col-xl-6 col-xxl-3 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Kendaraan Terbaru</h5>
-                <p class="card-text">
-                  Menyediakan kendaraan terbaru dengan kondisi prima, bersih,
-                  dan terawat.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- End Keunggulan 2 -->
-          <!-- Start Keunggulan 3 -->
-          <div class="col-12 col-xl-6 col-xxl-3 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Legalitas</h5>
-                <p class="card-text">
-                  Memiliki legalitas hukum dan terdaftar sebagai Perusahaan Jasa
-                  Transportasi.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- End Keunggulan 3 -->
-          <!-- Start Keunggulan 4 -->
-          <div class="col-12 col-xl-6 col-xxl-3 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Servis Resmi</h5>
-                <p class="card-text">
-                  Melakukan servis berkala di bengkel resmi sehingga performa
-                  kendaraan tetap terjaga.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- End Keunggulan 4 -->
         </div>
-        <!-- End Main Section -->
+        <!-- Second column container -->
+        <div class="col-12 col-lg-8 kcol-right">
+          <div class="row">
+            <!-- First row inside the second column -->
+            <div class="col-12 col-md-6 p-2">
+              <div class="p-3 kcol-sub-right ksr1">
+                <ul>
+                  <li class="icon"><i class="bi bi-shield-fill"></i></li>
+                  <li class="title">Asuransi</li>
+                  <li class="desc">
+                    Semua unit kendaraan menggunakan asuransi untuk memberikan
+                    perlindungan total.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 p-2">
+              <div class="p-3 kcol-sub-right ksr2">
+                <ul>
+                  <li class="icon"><i class="bi bi-bank2"></i></i></li>
+                  <li class="title">Legalitas</li>
+                  <li class="desc">
+                    Memiliki legalitas hukum dan terdaftar sebagai Perusahaan
+                    Jasa Transportasi.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Second row inside the second column -->
+            <div class="col-12 col-md-6 p-2">
+              <div class="p-3 kcol-sub-right ksr3">
+                <ul>
+                  <li class="icon"><i class="bi bi-car-front-fill"></i></i></li>
+                  <li class="title">Terbaru</li>
+                  <li class="desc">
+                    Menyediakan kendaraan terbaru dengan kondisi prima, bersih,
+                    dan terawat.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 p-2">
+              <div class="p-3 kcol-sub-right ksr4">
+                <ul>
+                  <li class="icon"><i class="bi bi-gear-fill"></i></i></li>
+                  <li class="title">Servis Resmi</li>
+                  <li class="desc">
+                    Melakukan servis berkala di bengkel resmi sehingga performa
+                    kendaraan tetap terjaga.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- End Keunggulan -->
+
+    <!-- Start Langkah -->
+     <div class="langkah section">
+      <div class="container">
+        <div class="title-section mb-4">
+          <div class="sub-title">Langkah Pemesanan</div>
+          <div class="title-desc">
+            <p>Langkah mudah untuk menyewa kendaraan</p>
+          </div>
+        </div>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                <span class="accordion-number">01.</span>
+                <span class="accordion-title">Pilih Kendaraan</span>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <p>Pilih kendaraan yang sesuai dengan kriteria Anda dari katalog kami yang beragam.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                <span class="accordion-number">02.</span>
+                <span class="accordion-title">Isi Formulir</span>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>Isi formulir pemesanan dengan informasi pribadi dan detail perjalanan Anda.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                <span class="accordion-number">03.</span>
+                <span class="accordion-title">Pembayaran</span>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>Lakukan pembayaran menggunakan metode yang tersedia di website kami.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    <!-- End Langkah -->
 
     <!-- Start Sewa Kendaraan -->
     <div class="section kendaraan">
@@ -375,147 +475,266 @@
         </div>
         <!-- End Title Section -->
         <!-- Start Main Review -->
-        <div class="multiple-card-slider">
-          <div
-            id="carouselExampleControls"
-            class="carousel"
-            data-bs-ride="false"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="card mb-4">
-                  <div class="card-body">
-                    <div class="review-profile">
-                      <img src="images/product/car-01.jpg" alt="" />
-                      <div class="review-profile-info">
-                        <p class="card-profile-name">Card title 1</p>
-                        <p class="card-vehicle-name">Toyota New Rush</p>
-                      </div>
+        <div id="custom-cards">
+          <div class="owl-carousel owl-theme">
+            <div class="item item">
+              <div class="card">
+                <div class="card-body">
+                  <h2>Hamburger</h2>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <p class="card-text">
+                    Succulent, juicy, and utterly satisfying, this hamburger is
+                    a taste of pure delight.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        <i class="fa-solid fa-money-bill"></i>
+                      </button>
                     </div>
-
-                    <blockquote class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="review-profile">
-                      <img src="images/product/car-01.jpg" alt="" />
-                      <div class="review-profile-info">
-                        <p class="card-profile-name">Card title 2</p>
-                        <p class="card-vehicle-name">Toyota New Rush</p>
-                      </div>
-                    </div>
-
-                    <blockquote class="card-text">
-                      Some quick example content.
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="review-profile">
-                      <img src="images/product/car-01.jpg" alt="" />
-                      <div class="review-profile-info">
-                        <p class="card-profile-name">Card title 3</p>
-                        <p class="card-vehicle-name">Toyota New Rush</p>
-                      </div>
-                    </div>
-
-                    <blockquote class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content. Some quick example
-                      text to build on the card title and make up the bulk of
-                      the card's content.
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="review-profile">
-                      <img src="images/product/car-01.jpg" alt="" />
-                      <div class="review-profile-info">
-                        <p class="card-profile-name">Card title 4</p>
-                        <p class="card-vehicle-name">Toyota New Rush</p>
-                      </div>
-                    </div>
-
-                    <blockquote class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="review-profile">
-                      <img src="images/product/car-01.jpg" alt="" />
-                      <div class="review-profile-info">
-                        <p class="card-profile-name">Card title 5</p>
-                        <p class="card-vehicle-name">Toyota New Rush</p>
-                      </div>
-                    </div>
-
-                    <blockquote class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="review-profile">
-                      <img src="images/product/car-01.jpg" alt="" />
-                      <div class="review-profile-info">
-                        <p class="card-profile-name">Card title 6</p>
-                        <p class="card-vehicle-name">Toyota New Rush</p>
-                      </div>
-                    </div>
-
-                    <blockquote class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </blockquote>
+                    <small class="text-body-secondary">$200</small>
                   </div>
                 </div>
               </div>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <!--[End of Item one]-->
+
+            <div class="item item">
+              <div class="card">
+                <div class="card-body">
+                  <h2>Sausages</h2>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <p class="card-text">
+                    Savory, hearty, and absolutely delicious - a must-try
+                    sausage that's bursting with flavor
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        <i class="fa-solid fa-money-bill"></i>
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">$50</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--[End of Item two]-->
+
+            <div class="item item">
+              <div class="card">
+                <div class="card-body">
+                  <h2>French Fries</h2>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <p class="card-text">
+                    Perfectly crispy on the outside, fluffy on the inside--these
+                    French fries are simply addictive
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        <i class="fa-solid fa-money-bill"></i>
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">$100</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--[End of Item three]-->
+
+            <div class="item item">
+              <div class="card">
+                <div class="card-body">
+                  <h2>Fried Chicken</h2>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <p class="card-text">
+                    Crunchy, flavorful, and oh-so-juicy--this fried chicken hits
+                    all the right notes.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        <i class="fa-solid fa-money-bill"></i>
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">$150</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--[End of Item four]-->
+
+            <div class="item item">
+              <div class="card">
+                <div class="card-body">
+                  <h2>Vegetable Salad</h2>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <p class="card-text">
+                    Fresh, vibrant, and bursting with flavors--this vegetable
+                    salad is a healthy and delicious choice!
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        <i class="fa-solid fa-money-bill"></i>
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">$70</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--[End of Item five]-->
+
+            <div class="item item">
+              <div class="card">
+                <div class="card-body">
+                  <h2>Beans</h2>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <p class="card-text">
+                    Nutritious, hearty, and packed with flavor--these beans are
+                    a delicious and satisfying choice.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        <i class="fa-solid fa-money-bill"></i>
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">$120</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--[End of Item six]-->
+
+            <div class="item item">
+              <div class="card">
+                <div class="card-body">
+                  <h2>sandwich</h2>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <p class="card-text">
+                    Simple yet scrumptious, this sandwich hits the spot every
+                    time.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        <i class="fa-solid fa-money-bill"></i>
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">$30</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--[End of Item seven]-->
           </div>
         </div>
         <!-- End Main Review -->
@@ -663,12 +882,10 @@
     </div>
     <!-- End Modal -->
 
-    <!-- JQuery -->
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
+    <!-- External JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
