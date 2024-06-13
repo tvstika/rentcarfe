@@ -354,8 +354,18 @@
   width: auto;
   object-fit: cover;
 }
+.card-vehicle .card-title-year ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
 .card-vehicle .card-title {
   font-weight: bold;
+}
+.card-vehicle .card-year {
+  font-weight: lighter;
 }
 .card-vehicle .card-type {
   font-weight: lighter;
@@ -372,9 +382,23 @@
   font-size: 0.9rem;
   font-weight: lighter;
 }
-.card-vehicle .btn-card button {
+.card-price ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+.btn-card .btn {
+  background-color: var(--blue);
+  flex: 1;
+}
+.btn-card {
+  display: flex;
   width: 100%;
-  margin: 0.3rem 0rem;
+}
+.btn-card .btn:last-child {
+  flex: 0.3 0 auto;
 }
 /* Testimoni/Review Section */
 blockquote {
