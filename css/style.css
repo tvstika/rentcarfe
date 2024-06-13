@@ -331,6 +331,16 @@
   background-repeat: no-repeat !important;
   transition: transform 0.2s !important;
 }
+@media (max-width: 400px) {
+  .langkah .accordion-title {
+    font-size: 1.5rem;
+  }
+  .accordion-button::after {
+    width: 2rem !important;
+    height: 2rem !important;
+    background-size: 2rem !important;
+  }
+}
 
 /* Rent Preview Section */
 .kendaraan {
@@ -340,7 +350,7 @@
   overflow: hidden;
 }
 .card-vehicle img {
-  height: 20rem;
+  height: 17rem;
   width: auto;
   object-fit: cover;
 }
@@ -400,7 +410,7 @@ blockquote::after {
 .review-profile-info {
   margin-left: 1rem;
 }
-.rating{
+.rating {
   margin-top: -1rem;
 }
 /* Menampilkan Scrollbar pada text card yang overflow */
