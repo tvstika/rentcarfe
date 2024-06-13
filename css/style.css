@@ -1,7 +1,8 @@
 :root {
   --white: #ffffff;
-  --darkgrey: #666666;
-  --grey: #c8ccd6;
+  --grey: #666666;
+  --lightgrey: #c8ccd6;
+  --darkgrey: #303030;
   --blue: #3f8ffd;
   --black: #343a40;
   --white-transparent: rgba(255, 255, 255, 0.8);
@@ -14,7 +15,7 @@
 .section {
   align-items: center;
   margin: 0rem 6rem;
-  background-color: rgb(254, 196, 167);
+  /* background-color: rgb(254, 196, 167); */
 }
 @media (max-width: 768px) {
   .section {
@@ -23,7 +24,7 @@
 }
 .container {
   align-items: center;
-  background-color: coral;
+  /* background-color: coral; */
 }
 .btn-styled ul {
   display: flex;
@@ -223,7 +224,7 @@
 }
 .kcol-left {
   position: relative;
-  background-color: var(--darkgrey);
+  background-color: var(--grey);
   border-radius: 15px;
   color: var(--white);
   width: 100%;
@@ -289,7 +290,7 @@
 }
 .langkah .accordion-number {
   font-size: 2rem;
-  color: var(--darkgrey);
+  color: var(--grey);
 }
 .langkah .accordion-title {
   padding-left: 2rem;
@@ -400,6 +401,7 @@
 .btn-card .btn:last-child {
   flex: 0.3 0 auto;
 }
+
 /* Testimoni/Review Section */
 blockquote {
   margin: 0;
@@ -414,85 +416,31 @@ blockquote::after {
 }
 .review {
   margin-top: 6rem;
+  color: var(--white);
+}
+.review .container {
+  background-color: var(--darkgrey);
+  border-radius: 30px;
 }
 .review-profile {
   display: flex;
 }
 .review-profile img {
-  width: 5rem;
+  width: 5rem !important;
   height: 5rem;
   border-radius: 50%;
   object-fit: cover;
 }
-.review-profile .card-profile-name {
+.review-profile .review-profile-name {
   font-weight: bold;
 }
-.review-profile .card-vehicle-name {
+.review-profile .review-vehicle-name {
   font-weight: lighter;
-  margin-top: -1rem;
 }
 .review-profile-info {
   margin-left: 1rem;
 }
-.rating {
-  margin-top: -1rem;
-}
-/* Menampilkan Scrollbar pada text card yang overflow */
-.multiple-card-slider .card-body {
-  width: auto;
-  height: 13rem;
-  overflow-y: auto;
-}
-.multiple-card-slider .card {
-  margin: 0 0.5rem;
-}
-.multiple-card-slider .card-text {
-  width: auto;
-  height: auto;
-  overflow: hidden;
-}
-/* Uncomment jika prefer ... pada text overflow daripada scrollbar
-.multiple-card-slider .card-body {
-  overflow: hidden;
-  width: auto;
-  height: 13rem;
-  text-overflow: ellipsis;
-}
-.multiple-card-slider .card {
-  margin: 0 0.5rem;
-}
 
-.multiple-card-slider .card-text {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-} */
-.multiple-card-slider .carousel {
-  margin: 0rem -0.5rem;
-  margin-right: -0.5rem;
-}
-.multiple-card-slider .carousel-control-prev,
-.multiple-card-slider .carousel-control-next {
-  background-color: var(--darkgrey);
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-@media (min-width: 992px) {
-  .multiple-card-slider .carousel-item {
-    margin-right: 0;
-    flex: 0 0 calc(100% / 3);
-    display: block;
-    backface-visibility: visible;
-  }
-  .multiple-card-slider .carousel-inner {
-    display: flex;
-  }
-}
 /* About Preview Section */
 .about {
   margin-top: 6rem;
