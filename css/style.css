@@ -15,7 +15,7 @@
 .section {
   align-items: center;
   margin: 0rem 6rem;
-  /* background-color: rgb(254, 196, 167); */
+  background-color: rgb(254, 196, 167);
 }
 @media (max-width: 768px) {
   .section {
@@ -24,7 +24,7 @@
 }
 .container {
   align-items: center;
-  /* background-color: coral; */
+  background-color: coral;
 }
 .btn-styled ul {
   display: flex;
@@ -445,19 +445,11 @@ blockquote::after {
 .about {
   margin-top: 6rem;
 }
-.about .sub-title-btn {
-  text-align: left;
-}
-.about .btn {
-  width: 9rem;
-}
-.about .row {
-  width: 100%;
-  margin-top: 3rem;
-  color: var(--white);
-}
 .banner-about {
   position: relative;
+}
+.banner-about img {
+  border-radius: 30px;
 }
 .banner-text {
   position: absolute;
@@ -466,9 +458,6 @@ blockquote::after {
   color: white;
   text-align: left;
   padding: 0rem 1rem;
-}
-.about .section-title {
-  margin-bottom: 2rem;
 }
 @media (max-width: 768px) {
   .banner-text {
@@ -479,9 +468,6 @@ blockquote::after {
     height: 12rem;
     width: 100%;
     object-fit: cover;
-  }
-  .about .section-title {
-    margin-bottom: 0rem;
   }
 }
 /* Footer Section */
