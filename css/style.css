@@ -503,6 +503,7 @@ blockquote::after {
     object-fit: cover;
   }
 }
+
 /* Footer Section */
 .footer .container {
   margin-top: 6rem;
@@ -548,6 +549,9 @@ blockquote::after {
   color: var(--white);
 }
 @media (max-width: 768px) {
+  .footer .section {
+    margin: 0rem 2rem;
+  }
   .footer .row {
     padding: 3rem 0rem;
   }
@@ -556,7 +560,7 @@ blockquote::after {
   }
 }
 @media (max-width: 576px) {
-  .footer .section {
-    margin: 0rem 2rem;
+  .footer .usefullinks {
+    margin-top: 2rem;
   }
 }
