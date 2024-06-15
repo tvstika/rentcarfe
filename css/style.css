@@ -462,6 +462,9 @@ blockquote::after {
 .review-profile-info {
   margin-left: 1rem;
 }
+.owl-carousel span {
+  font-size: 3rem;
+}
 
 /* About Preview Section */
 .about {
