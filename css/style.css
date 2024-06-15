@@ -1,6 +1,8 @@
 :root {
   --white: #ffffff;
   --grey: #666666;
+  --mediumgrey: #383838;
+  --lightmediumgery: #3f3f3f;
   --lightgrey: #c8ccd6;
   --darkgrey: #303030;
   --blue: #3f8ffd;
@@ -15,7 +17,7 @@
 .section {
   align-items: center;
   margin: 0rem 6rem;
-  background-color: rgb(254, 196, 167);
+  /* background-color: rgb(254, 196, 167); */
 }
 @media (max-width: 768px) {
   .section {
@@ -24,7 +26,7 @@
 }
 .container {
   align-items: center;
-  background-color: coral;
+  /* background-color: coral; */
 }
 .btn-styled ul {
   display: flex;
@@ -406,7 +408,6 @@
 blockquote {
   margin: 0;
   padding: 0;
-  font-weight: bold;
 }
 blockquote::before {
   content: open-quote;
@@ -421,6 +422,26 @@ blockquote::after {
 .review .container {
   background-color: var(--darkgrey);
   border-radius: 30px;
+}
+.review .card {
+  color: var(--lightgrey);
+  background-image: linear-gradient(
+    90deg,
+    var(--lightmediumgery),
+    var(--mediumgrey),
+    var(--darkgrey)
+  );
+  border-radius: 25px;
+}
+.review .card-body {
+  background-image: linear-gradient(
+    90deg,
+    var(--lightmediumgery),
+    var(--mediumgrey),
+    var(--darkgrey)
+  );
+  border: none;
+  border-radius: 25px;
 }
 .review-profile {
   display: flex;
@@ -471,10 +492,12 @@ blockquote::after {
   }
 }
 /* Footer Section */
-.footer {
+.footer .container {
   margin-top: 6rem;
-  background-color: var(--black);
+  background-color: var(--darkgrey);
   color: var(--white);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 .footer ul {
   list-style-type: none;
@@ -492,7 +515,7 @@ blockquote::after {
   letter-spacing: 2rem;
 }
 .footer .row {
-  padding: 3rem 0rem;
+  padding: 3rem 1rem;
 }
 .footer-cr {
   text-align: center;
