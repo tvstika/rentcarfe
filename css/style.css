@@ -60,6 +60,7 @@
   backdrop-filter: blur(25px);
   padding: 0.7rem 6rem !important;
   box-shadow: 0 2px 7px var(--shadow);
+  margin-top: -4px;
 }
 .navbar img {
   width: 2.7rem;
@@ -491,6 +492,17 @@ blockquote::after {
     object-fit: cover;
   }
 }
+@media (max-width: 576px) {
+  .banner-text {
+    top: 10%;
+    left: 0;
+  }
+  .banner-about img {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+  }
+}
 /* Footer Section */
 .footer .container {
   margin-top: 6rem;
@@ -541,5 +553,10 @@ blockquote::after {
   }
   .footer .followus i {
     letter-spacing: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .footer .section {
+    margin: 0rem 2rem;
   }
 }
