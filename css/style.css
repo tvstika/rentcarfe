@@ -78,6 +78,7 @@
     padding: 0.7rem 2rem !important;
   }
 }
+
 /* Hero Section */
 .hero-container {
   display: flex;
@@ -95,7 +96,6 @@
     height: 40rem !important;
   }
 }
-
 .hero {
   position: absolute;
   top: 0 !important;
@@ -423,6 +423,7 @@ blockquote::after {
 .review .container {
   background-color: var(--darkgrey);
   border-radius: 30px;
+  padding: 3rem;
 }
 .review .card {
   color: var(--lightgrey);
@@ -462,8 +463,41 @@ blockquote::after {
 .review-profile-info {
   margin-left: 1rem;
 }
-.owl-carousel span {
-  font-size: 3rem;
+.slick-prev,
+.slick-next {
+  background-color: rgba(88, 88, 88, 0.555); /* Warna latar belakang tombol */
+  backdrop-filter: blur(25px);
+  color: white; /* Warna ikon */
+  border: none; /* Hapus border default */
+  border-radius: 50%; /* Bentuk tombol menjadi bulat */
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.slick-prev {
+  left: -50px; /* Jarak tombol prev dari kiri */
+}
+
+.slick-next {
+  right: -50px; /* Jarak tombol next dari kanan */
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: var(--grey); /* Warna latar belakang tombol saat di-hover */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 1rem; /* Ukuran ikon */
+  font-weight: bold;
 }
 
 /* About Preview Section */
